@@ -933,25 +933,29 @@ textarea:focus {
 /* start: Event Page
 ==================================================*/
 .event-single-content,
-.birthday-single-content {
+.birthday-single-content,
+.companies-single-content {
 	padding-top: 50px;
 	padding-bottom: 70px;
 }
 .event_single .feature_img img,
-.birthday_single .feature_img img {
+.birthday_single .feature_img img,
+.companies_single .feature_img img {
 	width: 100%;
 	border-radius: 8px;
 	overflow: hidden;
 }
 .event_single .feature_img,
-.birthday_single .feature_img {
+.birthday_single .feature_img,
+.companies_single .feature_img {
 	margin-bottom: 40px;
 }
 .event_single .meta_info {
 	margin-bottom: 20px;
 }
 .event_single .title,
-.birthday_single .title {
+.birthday_single .title,
+.companies_single .title {
 	margin-bottom: 20px;
 	color: var(--color-white);
 }
@@ -1006,21 +1010,25 @@ textarea:focus {
 
 /* start: Birthday Page
 ==================================================*/
-.birthday_single_content {
+.birthday_single_content,
+.companies_single_content {
 	display: flex;
 	flex-wrap: wrap;
 }
-.birthday_single_content .birthday_form {
+.birthday_single_content .birthday_form,
+.companies_single_content .companies_form {
 	width: 550px;
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 8px;
 	padding: 40px 30px 30px 30px;
 	margin-right: auto;
 }
-.birthday_single_content .content {
+.birthday_single_content .content,
+.companies_single_content .content {
 	width: calc(100% - 580px);
 }
-.birthday_single_content .content .subtitle {
+.birthday_single_content .content .subtitle,
+.companies_single_content .content .subtitle {
 	font-size: 24px;
 	line-height: 28px;
 	color: var(--color-white);
@@ -1046,11 +1054,13 @@ textarea:focus {
 .birthday_single_content .content .birthday_package:not(:last-child) {
 	margin-bottom: 20px;
 }
-.birthday_form {
+.birthday_form,
+.companies_form {
 	text-align: center;
 }
 
-.birthday_form .subtitle {
+.birthday_form .subtitle,
+.companies_form .subtitle {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 600;
@@ -1061,18 +1071,28 @@ textarea:focus {
 .birthday_form .form_group input[type="email"],
 .birthday_form .form_group input[type="tel"],
 .birthday_form .form_group textarea,
-.birthday_form .form_group input[type="date"] {
+.birthday_form .form_group input[type="date"],
+.companies_form .form_group input[type="text"],
+.companies_form .form_group input[type="email"],
+.companies_form .form_group input[type="tel"],
+.companies_form .form_group textarea,
+.companies_form .form_group input[type="date"] {
 	color: var(--color-white);
 	border-color: var(--color-white);
 }
 .birthday_form .form_group input[type="text"]::placeholder,
 .birthday_form .form_group input[type="email"]::placeholder,
 .birthday_form .form_group input[type="tel"]::placeholder,
-.birthday_form .form_group textarea::placeholder {
+.birthday_form .form_group textarea::placeholder,
+.companies_form .form_group input[type="text"]::placeholder,
+.companies_form .form_group input[type="email"]::placeholder,
+.companies_form .form_group input[type="tel"]::placeholder,
+.companies_form .form_group textarea::placeholder {
 	color: var(--color-white);
 }
 .birthday_form .form_two_col,
-.birthday_form .form_three_col {
+.birthday_form .form_three_col,
+.companies_form .form_two_col {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1086,30 +1106,36 @@ textarea:focus {
 	max-width: 65%;
 	flex: 0 0 65%;
 }
-.birthday_form .form_three_col .form_group {
+.birthday_form .form_three_col .form_group,
+.companies_form .form_three_col .form_group {
 	max-width: 31%;
 	flex: 0 0 31%;
 }
-.birthday_form .form_group .sub_info {
+.birthday_form .form_group .sub_info,
+.companies_form .form_group .sub_info {
 	color: var(--color-white);
 }
-.birthday_form .form_group textarea {
+.birthday_form .form_group textarea,
+.companies_form .form_group textarea {
 	margin-top: 10px;
 	resize: none;
 }
-.birthday_form .form_group .btn {
+.birthday_form .form_group .btn,
+.companies_form .form_group .btn {
 	margin-top: 20px;
 }
 .birthday_form .attraction {
 	margin-top: 100px;
 }
-.birthday_form .attraction .title {
+.birthday_form .attraction .title,
+.companies_form .attraction .title {
 	line-height: 22px;
 	margin-bottom: 10px;
 	font-weight: 600;
 }
 
-.birthday_form .attraction .links li a {
+.birthday_form .attraction .links li a,
+.companies_form .attraction .links li a {
 	display: block;
 	width: 100%;
 	font-size: 14px;
@@ -1121,7 +1147,8 @@ textarea:focus {
 	color: var(--color-white);
 }
 
-.birthday_form .attraction .links li:not(:last-child) {
+.birthday_form .attraction .links li:not(:last-child),
+.companies_form .attraction .links li:not(:last-child) {
 	margin-bottom: 10px;
 }
 /* end: Birthday Page */
@@ -1189,9 +1216,40 @@ textarea:focus {
 }
 /* end: Novigod Page	 */
 
-/* start: Header Area
+/* start: Companies Page
 ==================================================*/
-/* end: Header Area */
+.companies_single_content .content .content_box .content_title {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 600;
+	color: var(--color-white);
+	margin-bottom: 10px;
+	letter-spacing: 0.15px;
+}
+
+.companies_single_content .content .content_box p {
+	color: var(--color-white);
+}
+
+.companies_single_content .content .content_box img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.companies_single_content .content .content_box:not(:last-child) {
+	margin-bottom: 30px;
+}
+.companies_form .form_two_col .form_group {
+	flex: 0 0 48%;
+	max-width: 48%;
+}
+.companies_form .form_group textarea {
+	margin-top: 25px;
+}
+.companies_form .attraction {
+	margin-top: 40px;
+}
+/* end: Companies Page */
 
 /* start: Header Area
 ==================================================*/
