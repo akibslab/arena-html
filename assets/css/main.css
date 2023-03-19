@@ -1091,6 +1091,7 @@ textarea:focus {
 	display: block;
 	margin-bottom: 20px;
 	background: transparent;
+	border-radius: 0px;
 }
 .form_group input[type="date"]::-webkit-calendar-picker-indicator {
 	filter: invert(1);

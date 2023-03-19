@@ -288,6 +288,7 @@
 
 	.ticket_price_content .price_table {
 		flex-direction: column-reverse;
+		align-items: center;
 	}
 	.ticket_price_content .section_title {
 		margin-bottom: 30px;
@@ -517,8 +518,11 @@
 	.companies_single .title {
 		margin-bottom: 10px;
 	}
-
+	.event_single_content {
+		justify-content: center;
+	}
 	.event_single_content .content {
+		max-width: 100%;
 		width: 100%;
 		margin-bottom: 20px;
 	}
@@ -535,6 +539,7 @@
 	}
 
 	.event_single_content .price_table {
+		max-width: 100%;
 		width: 100%;
 	}
 
