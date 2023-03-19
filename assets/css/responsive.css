@@ -42,6 +42,14 @@
 	.footer_socials ul {
 		margin: 0 -15px;
 	}
+
+	/* event */
+	.event_single_content .content {
+		width: calc(100% - 440px);
+	}
+	.event_single_content .price_table .single_price {
+		width: 420px;
+	}
 }
 
 /* Medium devices (tablets, 768px to 991px) */
@@ -126,6 +134,15 @@
 
 	.site-footer {
 		padding-bottom: 40px;
+	}
+
+	/* event */
+	.event_single_content .content {
+		width: 100%;
+	}
+	.event_single_content .price_table {
+		margin-left: auto;
+		margin-right: 0;
 	}
 }
 
@@ -449,6 +466,58 @@
 		max-width: 100%;
 		height: auto;
 		margin-bottom: 30px;
+	}
+
+	/* Events */
+	.event_single .feature_img,
+	.birthday_single .feature_img,
+	.companies_single .feature_img {
+		height: 250px;
+		margin-bottom: 30px;
+	}
+
+	.event_single .feature_img img,
+	.birthday_single .feature_img img,
+	.companies_single .feature_img img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.event_single .meta_info {
+		margin-bottom: 20px;
+	}
+
+	.event_single .title,
+	.birthday_single .title,
+	.companies_single .title {
+		margin-bottom: 10px;
+	}
+
+	.event_single_content .content {
+		width: 100%;
+	}
+
+	.event_single_content .content p {
+		margin-bottom: 20px;
+	}
+
+	.event_single_content .price_table .single_price {
+		width: 100%;
+		height: 250px;
+	}
+
+	.event_single_content .price_table {
+		width: 100%;
+	}
+
+	.event_single .all_events {
+		margin-top: 20px;
+	}
+
+	.event-single-content,
+	.birthday-single-content,
+	.companies-single-content {
+		padding-bottom: 30px;
 	}
 }
 

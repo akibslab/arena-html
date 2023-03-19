@@ -270,6 +270,10 @@ textarea:focus {
 	display: block !important;
 	margin: 0 30px;
 }
+.mobile-menu.mean-container .mean-nav ul li {
+	float: right;
+	width: 86%;
+}
 
 .mean-container a.meanmenu-reveal {
 	display: none !important;
@@ -603,8 +607,8 @@ textarea:focus {
 ==================================================*/
 .home-hero {
 	height: 100vh;
-	background-size: cover;
-	background-position: center;
+	background-size: cover !important;
+	background-position: center !important;
 	background-color: var(--color-border);
 	position: relative;
 }
@@ -659,9 +663,9 @@ textarea:focus {
 .opening-hour {
 	padding-top: 50px;
 	padding-bottom: 70px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 .opening_hour_content .section_time {
 	margin-bottom: 50px;
@@ -771,8 +775,8 @@ textarea:focus {
 /* start: Events Section
 ==================================================*/
 .events-section {
-	background-size: cover;
-	background-position: center;
+	background-size: cover !important;
+	background-position: center !important;
 	padding-top: 50px;
 	padding-bottom: 70px;
 }
@@ -1174,6 +1178,8 @@ textarea:focus {
 .companies-single-content {
 	padding-top: 50px;
 	padding-bottom: 70px;
+	background-size: cover !important;
+	background-position: center !important;
 }
 .event_single .feature_img img,
 .birthday_single .feature_img img,

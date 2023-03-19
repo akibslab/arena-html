@@ -23,7 +23,7 @@
 	$("header .site_menu").meanmenu({
 		meanMenuContainer: ".mobile-menu",
 		meanScreenWidth: "991",
-		meanExpand: ['<i class="fal fa-angle-down"></i>'],
+		meanExpand: ['<img src="./assets/img/icons/angle-down.svg" alt="">'],
 	});
 
 	// side menu
