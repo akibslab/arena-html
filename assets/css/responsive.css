@@ -1,23 +1,454 @@
 /* X-Large devices (large desktops, 1200px to 1400px) */
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	.academy_items {
+		justify-content: space-between;
+	}
+	.academy_items .academy_item {
+		flex: 0 0 44%;
+		max-width: 44%;
+	}
 }
 
 /* Large devices (desktops, 992px to 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.site_menu ul li:not(:last-child) {
+		margin-left: 10px;
+	}
+	.header_info .location,
+	.header_info .phone,
+	.header_info .header_lang {
+		padding-right: 10px;
+		margin-right: 10px;
+	}
+	.site_logo a {
+		max-width: 170px;
+	}
+
+	.event_inner .event_image,
+	.skating_inner .skating_image {
+		max-width: 540px;
+	}
+	.event_inner .event_content,
+	.skating_inner .skating_content {
+		width: calc(100% - 570px);
+	}
+	.academy_items {
+		justify-content: space-between;
+	}
+	.academy_items .academy_item {
+		flex: 0 0 43%;
+		max-width: 43%;
+	}
+	.footer_socials ul {
+		margin: 0 -15px;
+	}
 }
 
 /* Medium devices (tablets, 768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.header_info .phone {
+		border: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.header_info .phone {
+		border: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.header_content {
+		justify-content: space-between;
+	}
+	.site_logo {
+		margin-right: initial;
+	}
+	.menu_bars {
+		max-width: 192px;
+		display: inline-block;
+		width: 100%;
+	}
+	h2 {
+		font-size: 54px;
+		line-height: 74px;
+	}
+	h3 {
+		font-size: 40px;
+		line-height: 55px;
+	}
+	.opening_hour_content .opening_time li {
+		font-size: 41px;
+		line-height: 40px;
+	}
+	.event_inner,
+	.skating_inner,
+	.attraction_inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.event_inner .event_image,
+	.skating_inner .skating_image,
+	.attraction_inner .attraction_img {
+		max-width: 100%;
+		margin-left: 0px;
+	}
+	.event_inner .event_image img,
+	.skating_inner .skating_image img,
+	.attraction_inner .attraction_img img {
+		width: 100%;
+	}
+
+	.event_inner .event_content,
+	.skating_inner .skating_content,
+	.attraction_inner .attraction_content {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.academy_items {
+		justify-content: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.academy_items .academy_item {
+		flex: 0 0 450px;
+		max-width: 450px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.footer_widget {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.site-footer {
+		padding-bottom: 40px;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
 @media only screen and (max-width: 767px) {
+	.row > * {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	.btn-ticket {
 		padding: 8px 16px 8px 8px;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.btn-ticket img {
 		margin-right: 12px;
 		max-width: 28px;
+	}
+	h1 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	h2 {
+		font-size: 36px;
+		line-height: 53px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h4 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h5 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0 0 10px;
+	}
+
+	.site_logo a {
+		max-width: 120px;
+	}
+
+	.menu_bars {
+		max-width: 30px;
+		width: 100%;
+	}
+	.main-content {
+		margin-top: 80px;
+	}
+	.main-content.sticky {
+		margin-top: 60px;
+	}
+	.side-menu {
+		max-width: 350px;
+		width: 100%;
+	}
+	.hero_content .hero_logo {
+		max-width: 200px;
+		margin-bottom: 10px;
+	}
+	.hero_content .button {
+		margin-top: 30px;
+	}
+	.hero_content {
+		margin-top: 60px;
+	}
+	.header_info .phone {
+		border: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.header_info .phone {
+		border: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.header_content {
+		justify-content: space-between;
+	}
+	.site_logo {
+		margin-right: initial;
+	}
+	.opening_hour_content .opening_time {
+		margin-bottom: 30px;
+	}
+	.opening_hour_content .opening_time li {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 10px;
+	}
+	.opening-hour {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.opening_hour_content .content p {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.opening_hour_content .content h3 {
+		line-height: 28px;
+	}
+	.opening_hour_content .content .button {
+		margin-top: 30px;
+	}
+	.ticket-price {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.ticket_price_content .price_table {
+		flex-direction: column-reverse;
+	}
+	.ticket_price_content .section_title {
+		margin-bottom: 30px;
+	}
+
+	.price_table .single_price {
+		max-width: 350px;
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+		margin-left: 0;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	.price_table .single_price .title {
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 600;
+	}
+
+	.price_table .single_price .sub_title {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+
+	.price_table .single_price .price {
+		margin-top: 0px;
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.price_table .single_price .price span {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.price_table .single_price .ticker {
+		left: 50%;
+	}
+	.events-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.events_content .section_title {
+		margin-bottom: 40px;
+	}
+
+	.event_inner,
+	.skating_inner,
+	.attraction_inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.event_inner .event_image,
+	.skating_inner .skating_image,
+	.attraction_inner .attraction_img {
+		max-width: 100%;
+		margin-left: 0px;
+	}
+	.event_inner .event_image img,
+	.skating_inner .skating_image img,
+	.attraction_inner .attraction_img img {
+		width: 100%;
+	}
+
+	.event_inner .event_content,
+	.skating_inner .skating_content,
+	.attraction_inner .attraction_content {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.event_inner .event_content .title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.event_inner .event_content .btn {
+		margin-top: 5px;
+	}
+	.single_event {
+		margin-bottom: 40px;
+	}
+	.events_content .all_events a,
+	.event_single .all_events a {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.attraction-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.attraction_content .section_title,
+	.skating_content .section_title,
+	.academy_content .section_title {
+		margin-bottom: 40px;
+	}
+
+	.attraction_inner .attraction_img,
+	.skating_inner .skating_image {
+		height: 240px;
+	}
+
+	.attraction_inner .attraction_img img,
+	.skating_inner .skating_image img,
+	.academy_inner .academy_img img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.attraction_inner .attraction_content,
+	.skating_inner .skating_content {
+		margin-top: 10px;
+	}
+
+	.attraction_content .title,
+	.skating_inner .skating_content .title {
+		font-size: 23px;
+		line-height: 28px;
+	}
+
+	.attraction_content p,
+	.skating_inner .skating_content p {
+		margin-bottom: 10px;
+	}
+
+	.attraction_content .btn,
+	.skating_inner .skating_content .btn {
+		margin-top: 0px;
+	}
+	.single_attraction:not(:last-child),
+	.single_skating {
+		margin-bottom: 20px;
+	}
+	.skating-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.skating_inner .skating_image,
+	.academy_inner .academy_img {
+		height: 250px;
+	}
+	.academy-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.academy_items {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.academy_items .academy_item {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.academy_inner {
+		padding: 20px;
+	}
+
+	.academy_inner .academy_title .title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.academy_inner .academy_img {
+		margin-bottom: 20px;
+	}
+	.academy_inner .academy_content p {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	.map-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.map_content .section_title {
+		margin-bottom: 20px;
+	}
+	.map_content .map_bottom_text .inline_btn a {
+		margin: 0;
+	}
+
+	.map_content .map_bottom_text .inline_btn {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.site-footer {
+		padding-top: 20px;
+		padding-bottom: 0px;
+		margin-bottom: -10px;
+	}
+	.footer_widget {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 30px;
 	}
 }
 
