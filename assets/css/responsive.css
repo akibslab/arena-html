@@ -50,6 +50,16 @@
 	.event_single_content .price_table .single_price {
 		width: 420px;
 	}
+
+	/* birthday */
+	.birthday_single_content .birthday_form,
+	.companies_single_content .companies_form {
+		width: 445px;
+	}
+	.birthday_single_content .content,
+	.companies_single_content .content {
+		width: calc(100% - 470px);
+	}
 }
 
 /* Medium devices (tablets, 768px to 991px) */
@@ -139,10 +149,24 @@
 	/* event */
 	.event_single_content .content {
 		width: 100%;
+		margin-bottom: 30px;
 	}
 	.event_single_content .price_table {
 		margin-left: auto;
 		margin-right: 0;
+	}
+
+	/* Birthday */
+	.birthday_single_content .content,
+	.companies_single_content .content {
+		width: 100%;
+	}
+
+	.birthday_single_content .birthday_form,
+	.companies_single_content .companies_form {
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
@@ -285,7 +309,8 @@
 		font-weight: 600;
 	}
 
-	.price_table .single_price .sub_title {
+	.price_table .single_price .sub_title,
+	.event_single_content .price_table .single_price .sub_title {
 		font-size: 16px;
 		line-height: 24px;
 		margin-bottom: 10px;
@@ -495,6 +520,7 @@
 
 	.event_single_content .content {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.event_single_content .content p {
@@ -504,6 +530,8 @@
 	.event_single_content .price_table .single_price {
 		width: 100%;
 		height: 250px;
+		padding: 20px;
+		text-align: center;
 	}
 
 	.event_single_content .price_table {
@@ -518,6 +546,58 @@
 	.birthday-single-content,
 	.companies-single-content {
 		padding-bottom: 30px;
+	}
+
+	/* Birthday */
+	.birthday_single_content .content,
+	.companies_single_content .content {
+		width: 100%;
+	}
+
+	.birthday_single_content .content .subtitle,
+	.companies_single_content .content .subtitle {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	.birthday_single_content .birthday_form,
+	.companies_single_content .companies_form {
+		padding: 20px;
+		margin-top: 30px;
+	}
+
+	.birthday_form .subtitle,
+	.companies_form .subtitle {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.birthday_form .form_two_col .form_group:first-child,
+	.birthday_form .form_two_col .form_group:last-child,
+	.birthday_form .form_three_col .form_group,
+	.companies_form .form_three_col .form_group,
+	.companies_form .form_two_col .form_group {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.birthday_form .form_group .btn,
+	.companies_form .form_group .btn {
+		margin-top: 0;
+	}
+	.form_group .sub_info {
+		font-size: 11px;
+	}
+	.birthday_form .attraction {
+		margin-top: 50px;
+	}
+	.companies_single_content .content .content_box .content_title {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.companies_single_content .content .content_box img {
+		height: 240px;
+		object-fit: cover;
 	}
 }
 

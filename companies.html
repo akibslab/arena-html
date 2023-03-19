@@ -32,13 +32,16 @@
 <body>
 
   <!-- start: Header Area -->
-  <header class="site-header bg-2" id="site-header">
+  <header class="site-header bg-2 header-fixed" id="site-header">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
           <div class="header_content">
             <!-- menu -->
-            <div class="site_menu">
+            <div class="menu_bars d-lg-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt="Menu bar"></a>
+            </div>
+            <div class="site_menu d-none d-lg-block">
               <ul>
                 <li><a href="#">כרטיסים</a></li>
                 <li class="has-dropdown"><a href="#">פעילויות</a>
@@ -62,7 +65,7 @@
 
             <!-- header info -->
             <div class="header_info">
-              <div class="location">
+              <div class="location d-none d-xxl-inline-flex">
                 <a href="#"><span class="icon"><img src="./assets/img/icons/map-marker.svg" alt="map-marker"></span>
                   הגעה לתנובות</a>
               </div>
@@ -70,16 +73,16 @@
                 <a href="tel:*8207"><span class="icon"><img src="./assets/img/icons/phone.svg" alt="phone"></span>
                   *8207</a>
               </div>
-              <div class="language">
-                <ul>
+              <div class="header_lang d-none d-lg-inline-flex">
+                <ul class="languages dropdown">
                   <span class="icon"><img src="./assets/img/icons/lan.svg" alt="map-marker"></span>
-                  <li class="default"><a href="#">עברית</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">עברית</a></li>
-                      <li><a href="#">Русский</a></li>
-                      <li><a href="#">English</a></li>
-                    </ul>
-                  </li>
+                  <li class="activated"></li>
+
+                  <ul class="lang_lists">
+                    <li class="active"><a href="#">עברית</a></li>
+                    <li><a href="#">Русский</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
                 </ul>
               </div>
             </div>
@@ -92,6 +95,44 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="side-menu d-lg-none">
+      <div class="top-area d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="site_logo">
+          <a href="index.html"><img src="./assets/img/logo/logo.png" alt="Logo"></a>
+        </div>
+
+        <a href="javascript:void(0)" class="cross-icon-box">
+          <img src="./assets/img/icons/close.svg" class="cross" alt="">
+        </a>
+
+      </div>
+
+      <div class="mobile-menu"> </div>
+
+
+      <div class="bottom-area d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="location">
+          <a href="#"><span class="icon"><img src="./assets/img/icons/map-marker.svg" alt="map-marker"></span>
+            הגעה לתנובות</a>
+        </div>
+
+        <ul class="languages dropdown">
+          <li class="activated"></li>
+          <span class="icon"><img src="./assets/img/icons/lan.svg" alt="map-marker"></span>
+
+          <ul class="lang_lists">
+            <li class="active"><a href="#">עברית</a></li>
+            <li><a href="#">Русский</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </ul>
+
+      </div>
+
     </div>
   </header>
   <!-- end: Header Area -->
@@ -253,7 +294,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-3 order-lg-1">
           <div class="footer_widget">
             <div class="widget_inner">
               <div class="widget_title">
@@ -286,7 +327,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-2 order-lg-2">
           <div class="footer_widget">
             <div class="widget_inner">
               <div class="widget_title">
@@ -316,7 +357,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-1 order-lg-3">
           <div class="footer_widget">
             <div class="widget_inner">
               <div class="widget_title">
