@@ -522,7 +522,6 @@
 		justify-content: center;
 	}
 	.event_single_content .content {
-		max-width: 100%;
 		width: 100%;
 		margin-bottom: 20px;
 	}
@@ -532,6 +531,7 @@
 	}
 
 	.event_single_content .price_table .single_price {
+		max-width: 100%;
 		width: 100%;
 		height: 250px;
 		padding: 20px;
