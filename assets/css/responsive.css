@@ -498,8 +498,8 @@
 	.event_single .feature_img,
 	.birthday_single .feature_img,
 	.companies_single .feature_img {
-		height: 250px;
-		margin-bottom: 30px;
+		height: 500px;
+		margin-bottom: 20px;
 	}
 
 	.event_single .feature_img img,
@@ -510,13 +510,12 @@
 	}
 
 	.event_single .meta_info {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
-
 	.event_single .title,
 	.birthday_single .title,
 	.companies_single .title {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 	.event_single_content {
 		justify-content: center;
@@ -534,7 +533,7 @@
 		max-width: 100%;
 		width: 100%;
 		height: 250px;
-		padding: 20px;
+		padding: 30px;
 		text-align: center;
 	}
 
@@ -551,6 +550,7 @@
 	.birthday-single-content,
 	.companies-single-content {
 		padding-bottom: 30px;
+		padding-top: 20px;
 	}
 
 	/* Birthday */
@@ -561,16 +561,15 @@
 
 	.birthday_single_content .content .subtitle,
 	.companies_single_content .content .subtitle {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 24px;
 		margin-bottom: 20px;
 	}
 	.birthday_single_content .birthday_form,
 	.companies_single_content .companies_form {
-		padding: 20px;
+		padding: 40px 30px 30px 30px;
 		margin-top: 30px;
 	}
-
 	.birthday_form .subtitle,
 	.companies_form .subtitle {
 		font-size: 18px;
@@ -596,13 +595,35 @@
 		margin-top: 50px;
 	}
 	.companies_single_content .content .content_box .content_title {
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.companies_single_content .content .content_box p {
+		margin-bottom: 20px;
 	}
 
 	.companies_single_content .content .content_box img {
 		height: 240px;
 		object-fit: cover;
+	}
+	.meta_info span.date {
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.14px;
+		font-weight: 500;
+	}
+	.events_content .single_event.event_page {
+		margin-bottom: 20px;
+	}
+	.events_content .single_event.event_page:not(:last-child) {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.event_close .meta_info span.close {
+		font-size: 14px;
+		line-height: 16px;
+		margin-right: 3px;
 	}
 }
 

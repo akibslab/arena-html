@@ -184,7 +184,16 @@ label {
 	color: var(--color-link);
 	border-color: var(--color-link);
 }
+.btn.btn-inline {
+	padding: 0;
+	background: none;
+	border: none;
+	color: var(--color-cta);
+}
 
+.btn.btn-inline:hover {
+	color: var(--color-link);
+}
 .btn-ticket {
 	background: linear-gradient(86.03deg, #ffb23f 1.54%, #ff8f28 96.76%);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -789,6 +798,15 @@ textarea:focus {
 .single_event {
 	margin-bottom: 70px;
 }
+.events_content .single_event.event_page {
+	margin-bottom: 0px;
+}
+
+.events_content .single_event.event_page:not(:last-child) {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .event_inner {
 	display: flex;
 	align-items: center;
@@ -816,8 +834,29 @@ textarea:focus {
 	border-radius: 8px;
 	line-height: 19px;
 	font-weight: 600;
+	opacity: 1;
+}
+.meta_info span.date {
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.event_close .meta_info span {
+	opacity: 0.5;
 }
 
+.event_close .meta_info span.close {
+	padding: 0;
+	background-color: transparent;
+	color: #ff8f28;
+	opacity: 1;
+	margin-right: 10px;
+}
 .event_inner .event_content .meta_info {
 	margin-bottom: 10px;
 }
@@ -833,6 +872,9 @@ textarea:focus {
 
 .event_inner .event_content .btn {
 	margin-top: 15px;
+}
+.event_page .event_inner .event_content .btn {
+	margin-top: 5px;
 }
 .events_content .all_events a,
 .event_single .all_events a {
